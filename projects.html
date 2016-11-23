@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/test.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class='bodyDiv'>
+    <!--巡覽 -->
+      <nav class="navbar navbar-inverse navbar-static-top"><!--navbar-inverse--> 
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"> Yi Rou's </a> <!--品牌名稱-->
+          <button type='button' class='navbar-toggle' 
+                                data-toggle='collapse'  
+                                data-target='.navbar-collapse'> 
+          <!--螢幕縮小時巡覽變成icon-->  
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          </button>
+        </div>
+        <ul class="nav  navbar-nav  navbar-right  collapse navbar-collapse" >
+            <!--螢幕縮小時原巡覽消失-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      </nav>
+    <!-- 巡覽結束-->
+    <!--Ｈome的圖-->
+      <div class="row content">
+        <div class = "col-md-4 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
+          <a href="#" data-toggle="modal" data-target="#blueForestModal">
+            <img class="img-responsive imgJs" src="img/blueForest.jpg" alt="BlueFrest">
+          </a>
+          <span class="spanJs">Blue Forest, 2016 </span>
+        </div>
+        <div class='col-md-5 col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-1 description'>
+          <h2>藍森</h2>
+          <p>This is the description of Blue Forest.</p>
+        </div>
+      </div>
+    <!--Ｈome的圖end-->
+    <!--氣到彈出來視窗-->
+      <div class="modal fade" id="blueForestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Blue Forest</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="img/blueForest.jpg" alt="BlueFrest">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+          </div>
+        </div>
+      </div>
+    <!--氣到彈出來視窗end-->
+      <hr>
+      <div class="footer">
+        <footer>
+          <p>&copy Ren's  company</p>
+        </footer>
+      </div>
+    </div>
+    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+  </body>
+</html>
